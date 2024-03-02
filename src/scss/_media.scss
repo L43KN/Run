@@ -22,6 +22,11 @@
             }
         }
     }
+
+    .consultation {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 @media(max-width:767px) {
@@ -96,6 +101,35 @@
                     margin-top: 10px;
                 }
             }
+        }
+    }
+
+    .consultation {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        min-height: 315px;
+        &__info {
+            display: none;
+        }
+        &__wrapper {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+
+        }
+    }
+
+
+    
+    .title {
+        &--mobile {
+            font-weight: 700;
+            font-size: 23px;
+            text-align: center;
+            line-height: 30px;
         }
     }
 }
