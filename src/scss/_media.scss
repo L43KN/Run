@@ -1,0 +1,101 @@
+@media(max-width:991px) {
+
+    .container {
+        width: 100%;;
+    }
+
+    .main {
+        padding-bottom: 30px;
+        &__header {
+            justify-content: space-around;
+            align-items:flex-end;
+                &-official {
+                    &-span {
+                        margin-top: 0;
+                    }
+                }
+        }
+        &__wrapper {
+            align-items: center;
+            &-link {
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+@media(max-width:767px) {
+
+    .main {
+        &__header {
+            &-official {
+                display: none;
+            }
+        }
+    }
+
+    .adventages {
+        &__wrapper {
+            &-item {
+                &-title {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:575px) {
+    .main {
+        min-height: 600px;
+        padding: 25px 0;
+        &__header {
+            flex-direction: column;
+            align-items:center;
+            &-logo {
+                margin-bottom: 25px;
+            }
+        }
+        &__wrapper {
+            margin-top: 25px;
+            &-title {
+                text-align: center;
+            }
+            &-subtitle {
+                text-align: center;
+            }
+            &-icons {
+                max-width: 100%;
+                margin: 25px 0 25px 0;
+                &-icon {
+                    width: 100px;
+                }
+            }
+            &-link {
+                margin-top: 25px;
+            }
+        }
+    }
+
+    .adventages {
+        padding: 25px 0;
+        &__wrapper {
+            margin-top: 25px;
+            flex-direction: column;
+            align-items:center;
+            &-item {
+                margin-bottom: 25px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &-title {
+                    text-align: center;
+                    margin-top: 10px;
+                }
+                &-subtitle {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
