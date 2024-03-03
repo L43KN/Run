@@ -27,6 +27,14 @@
         padding-left: 10px;
         padding-right: 10px;
     }
+
+    .carousel {
+        min-height: 530px;
+        padding: 30px 0;
+        &__wrapper {
+            width: 80%;
+        }
+    }
 }
 
 @media(max-width:767px) {
@@ -46,6 +54,14 @@
                     text-align: center;
                 }
             }
+        }
+    }
+
+    .carousel {
+        min-height: 361px;
+        padding: 25px 0;
+        &__wrapper {
+            width: 70%;
         }
     }
 }
@@ -122,7 +138,15 @@
         }
     }
 
+    .carousel {
+        min-height: 262px;
+        padding: 20px 0;
+        &__wrapper {
+            width: 90%;
+        }
+    }
 
+    
     
     .title {
         &--mobile {
