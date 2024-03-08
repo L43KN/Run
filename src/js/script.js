@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  
     $('.carousel__wrapper').slick({
         infinite: true,
         speed: 300,
@@ -35,10 +36,5 @@ $(document).ready(function(){
 
     toggleClassesInItem('.catalog__content-item-face-footer-link');
     toggleClassesInItem('.catalog__content-item-back-footer-link');
-
-
-
-
-
 
   });
