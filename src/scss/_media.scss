@@ -237,8 +237,32 @@
         }
     }
 
-    
-    
+    .overlay {
+        .modal {
+            width: 280px;
+            min-height: 300px;
+            padding: 10px;
+            &__close {
+                right: 5px;
+                font-size: 20px;
+                line-height: 20px;
+            }
+            &__wrapper {
+                margin-top: 10px;
+                .form {
+                    width: 100%;
+                    .button {
+                        &--big {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
     .title {
         &--mobile {
             font-weight: 700;

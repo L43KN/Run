@@ -34,7 +34,49 @@ $(document).ready(function(){
       });
     }
 
-    toggleClassesInItem('.catalog__content-item-face-footer-link');
-    toggleClassesInItem('.catalog__content-item-back-footer-link');
+    toggleClassesInItem('.catalog__content-item-face-link');
+    toggleClassesInItem('.catalog__content-item-back-link');
+
+    $('[data-modal=consultation]').on('click', function() {
+      $('.overlay, #consultation').fadeIn('slow');
+    });
+
+    $('.button--small').each(function(n) {
+      $(this).on('click', function() {
+        $('#order .modal__subtitle').text($('.catalog__content-item-face-subtitle').eq(n).text());
+        $('.overlay ,#order').fadeIn('slow');
+      })
+    });
+
+    $('.modal__close').on('click', function() {
+      $('.overlay, #consultation, #order, #gratitude').fadeOut('slow');
+    });
+
+    function validationForms(form) {
+      $(form).validate({
+        rules: {
+          name: "required",
+          phone: "required",
+          email: {
+            required: true,
+            email: true,
+            minlength: 10
+          }
+        },
+        messages: {
+          name: "Введите ваше имя",
+          phone: "Введите ваш номер телефона",
+          email: {
+            required: "Введите вашу эл.почту",
+            email: "Введите вашу эл.почту корректно",
+            minlength: jQuery.validator.format("Минимальное кол-во символо: {0}")
+          }
+        }
+      });
+    }
+
+    validationForms('.consultation__wrapper .form');
+    validationForms('#consultation .form');
+    validationForms('#order .form');
 
   });
